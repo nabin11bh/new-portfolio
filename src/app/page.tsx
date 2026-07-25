@@ -1,6 +1,8 @@
 import Nav from "@/components/Nav";
-import Container from "@/components/Container";
 import Hero from "@/components/Hero";
+import Projects from "@/components/Projects";
+import Skills from "@/components/Skills";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -11,22 +13,16 @@ export default function Home() {
           <Hero />
         </section>
 
-        <section id="work" className="min-h-screen py-32">
-          <Container>
-            <p className="font-mono text-muted">{/* projects section */}</p>
-          </Container>
+        <section id="work" className="py-32">
+          <Projects />
         </section>
 
-        <section id="stack" className="min-h-screen py-32">
-          <Container>
-            <p className="font-mono text-muted">{/* skills section */}</p>
-          </Container>
+        <section id="stack" className="py-32">
+          <Skills />
         </section>
 
-        <section id="contact" className="min-h-screen py-32">
-          <Container>
-            <p className="font-mono text-muted">{/* contact section */}</p>
-          </Container>
+        <section id="contact" className="min-h-screen flex flex-col justify-center py-32">
+          <Contact />
         </section>
       </main>
     </>

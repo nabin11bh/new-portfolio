@@ -21,9 +21,30 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Your Name — Fullstack Developer",
+  title: "Nabin Bhattarai - Fullstack Developer",
   description:
-    "Fullstack developer building real-world web applications with React, Node.js, and TypeScript.",
+    "Fullstack developer building SewaSathi, a local services marketplace, plus a job portal and finance management system. React, Node.js, Express, TypeScript, MySQL.",
+  keywords: [
+    "fullstack developer",
+    "React developer",
+    "Node.js developer",
+    "Nepal developer",
+    "SewaSathi",
+  ],
+  openGraph: {
+    title: "Nabin Bhattarai - Fullstack Developer",
+    description:
+      "Fullstack developer building real-world web applications with React, Node.js, and TypeScript.",
+    url: "https://nabinbhattarai11.com.np",
+    siteName: "Nabin Bhattarai",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Nabin Bhattarai - Fullstack Developer",
+    description:
+      "Fullstack developer building real-world web applications with React, Node.js, and TypeScript.",
+  },
 };
 
 export default function RootLayout({
@@ -32,7 +53,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
         className={`${spaceGrotesk.variable} ${inter.variable} ${jetbrainsMono.variable} font-body antialiased`}
       >
