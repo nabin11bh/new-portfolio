@@ -3,9 +3,11 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import Container from "./Container";
+import Image from "next/image";
 
 const links = [
   { href: "#work", label: "/work" },
+   { href: "#experience", label: "/experience" },
   { href: "#stack", label: "/stack" },
   { href: "#contact", label: "/contact" },
 ];
@@ -31,7 +33,8 @@ export default function Nav() {
     <header className={`fixed top-0 z-50 w-full transition-colors duration-300 ${scrolled || menuOpen ? "bg-bg/90 backdrop-blur border-b border-border" : ""}`}>
       <Container>
         <nav className="flex h-16 items-center justify-between font-mono text-sm">
-          <a href="#" onClick={() => setMenuOpen(false)} className="text-text hover:text-accent transition-colors z-50 relative">
+            <a href="#" onClick={() => setMenuOpen(false)} className="flex items-center gap-2 text-text hover:text-accent transition-colors z-50 relative">
+            <Image src="/icon.svg" alt="" width={22} height={22} />
             ~/Nabin Bhattarai
           </a>
 

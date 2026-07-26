@@ -1,6 +1,7 @@
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
+import Experience from "@/components/Experience";
 import Skills from "@/components/Skills";
 import Contact from "@/components/Contact";
 
@@ -15,6 +16,10 @@ export default function Home() {
 
         <section id="work" className="py-32">
           <Projects />
+        </section>
+
+        <section id="experience" className="py-32">
+          <Experience />
         </section>
 
         <section id="stack" className="py-32">

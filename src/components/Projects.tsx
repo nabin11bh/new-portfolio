@@ -39,17 +39,23 @@ export default function Projects() {
                   <span key={tech} className="font-mono text-xs text-muted border border-border rounded px-2 py-1">{tech}</span>
                 ))}
               </div>
-
-              {project.links && (
-                <div className="flex items-center gap-4 pt-1">
-                  {project.links.map((link) => (
-                    <a key={link.href} href={link.href} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-sm text-accent hover:opacity-80 transition-opacity w-fit">
-                      {link.label}
-                      <ArrowUpRight size={14} />
-                    </a>
-                  ))}
-                </div>
-              )}
+                 
+                 <div className="flex flex-wrap items-center gap-5 pt-1">
+                {project.liveUrl && (
+                  <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-sm text-accent hover:opacity-80 transition-opacity w-fit">
+                    Live
+                    <ArrowUpRight size={14} />
+                  </a>
+                )}
+                {project.links && project.links.map((link) => (
+                  <a key={link.href} href={link.href} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-sm text-accent hover:opacity-80 transition-opacity w-fit">
+                    {link.label}
+                    <ArrowUpRight size={14} />
+                  </a>
+                ))}
+              </div>
+             
+              
             </div>
           </motion.div>
         ))}
