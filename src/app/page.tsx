@@ -10,23 +10,23 @@ export default function Home() {
     <>
       <Nav />
       <main>
-        <section id="home" className="min-h-screen flex items-center pt-16">
+        <section id="home" className="flex items-center pt-24 pb-10 md:min-h-screen md:pt-16 md:pb-0">
           <Hero />
         </section>
 
-        <section id="work" className="py-32">
+        <section id="work" className="py-8 md:py-32">
           <Projects />
         </section>
 
-        <section id="experience" className="py-32">
+        <section id="experience" className="py-8 md:py-32">
           <Experience />
         </section>
 
-        <section id="stack" className="py-32">
+        <section id="stack" className="py-8 md:py-32">
           <Skills />
         </section>
 
-        <section id="contact" className="min-h-screen flex flex-col justify-center py-32">
+        <section id="contact" className="flex flex-col justify-center py-8 md:min-h-screen md:py-32">
           <Contact />
         </section>
       </main>

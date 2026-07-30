@@ -19,18 +19,18 @@ export default function Contact() {
         If you&apos;re hiring, or just want to talk about something I built, my inbox is the fastest way to reach me.
       </motion.p>
 
-      <motion.a
-        href="mailto:nabinbhattarai214@gmail.com"
-        initial={{ opacity: 0, y: 12 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6, delay: 0.15 }}
-        className="group inline-flex items-center gap-3 text-2xl md:text-3xl font-display font-semibold text-text hover:text-accent transition-colors w-fit mb-14"
-      >
-        <Mail size={26} />
-        nabinbhattarai214@gmail.com
-        <ArrowUpRight size={22} className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
-      </motion.a>
+     <motion.a
+  href="mailto:you@example.com"
+  initial={{ opacity: 0, y: 12 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.6, delay: 0.15 }}
+  className="group inline-flex flex-wrap items-center gap-2 md:gap-3 text-lg sm:text-2xl md:text-3xl font-display font-semibold text-text hover:text-accent transition-colors w-fit max-w-full mb-10 md:mb-14 break-all"
+>
+  <Mail size={22} className="shrink-0" />
+  nabinbhattarai214@gmail.com
+  <ArrowUpRight size={18} className="shrink-0 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1 md:!size-[22px]" />
+</motion.a>
 
       <motion.div
         initial={{ opacity: 0 }}
