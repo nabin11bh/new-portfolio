@@ -23,7 +23,7 @@ export default function Experience() {
             <div className="flex flex-col gap-3">
               <div className="flex flex-wrap items-baseline justify-between gap-2">
                 <h3 className="font-display text-xl md:text-2xl font-semibold text-text">{job.role}</h3>
-                <span className="font-mono text-xs text-accent">{job.company}</span>
+                <span className="font-mono text-xs text-muted">{job.company}</span>
               </div>
 
               <p className="text-muted leading-relaxed max-w-2xl">{job.description}</p>
