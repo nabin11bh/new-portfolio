@@ -21,6 +21,8 @@ const jetbrainsMono = JetBrains_Mono({
   weight: ["400", "500"],
 });
 
+
+
 export const metadata: Metadata = {
   title: "Nabin Bhattarai - Fullstack Developer",
   description:

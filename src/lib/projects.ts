@@ -12,19 +12,19 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: "job-portal",
+    id: "dpsms",
     date: "2026",
-    title: "Job Portal",
-    tagline: "Job listing and application platform",
+    title: "School Management System (DPSMS)",
+    tagline: "Multi-tenant SaaS for K-12 school administration",
     description:
-      "A job board where employers post openings and candidates apply directly through the platform - with role-based views for each side.",
-    stack: ["React", "Node.js", "Express", "PostgreSQL", "Next.js"],
+      "Attendance, fee management, and role-based access across multiple schools from one codebase - built as a deep dive into multi-tenancy and data-integrity bugs that only surface at real scale.",
+    stack: ["Node.js", "Express", "TypeScript", "Prisma", "PostgreSQL", "Next.js", "Tailwind CSS", "BullMQ/Redis"],
     highlight:
-      "Focused on clean REST API design - consistent response shapes, proper status codes, and route-level authorization so employers and candidates only see what they should.",
-    liveUrl: "",
+       "Built the fee module with recurring invoice generation, partial payment tracking, and overdue reminders via BullMQ/Redis queues, and designed the attendance system with real-time roll calls, bulk-marking for class teachers, and dashboards that surface class-level and student-level trends — all scoped per tenant.",
+    liveUrl: "https://digitalpathshalasms.vercel.app",
     links: [
-      { label: "Backend", href: "https://github.com/your-username/job-portal-backend" },
-      { label: "Frontend", href: "https://github.com/your-username/job-portal-frontend" },
+      { label: "Backend", href: "https://github.com/nabin11bh/dpsms-backend" },
+      { label: "Frontend", href: "https://github.com/nabin11bh/dpsms-frontend" },
     ],
   },
   {
