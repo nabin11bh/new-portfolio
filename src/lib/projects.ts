@@ -15,7 +15,7 @@ export const projects: Project[] = [
     id: "dpsms",
     date: "2026",
     title: "School Management System (DPSMS)",
-    tagline: "Multi-tenant SaaS for K-12 school administration",
+    tagline: "Multi-tenant SaaS for school administration",
     description:
       "Attendance, fee management, and role-based access across multiple schools from one codebase - built as a deep dive into multi-tenancy and data-integrity bugs that only surface at real scale.",
     stack: ["Node.js", "Express", "TypeScript", "Prisma", "PostgreSQL", "Next.js", "Tailwind CSS", "BullMQ/Redis"],
