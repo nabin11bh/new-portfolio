@@ -18,7 +18,7 @@ export const projects: Project[] = [
     tagline: "Multi-tenant SaaS for school administration",
     description:
       "Attendance, fee management, and role-based access across multiple schools from one codebase - built as a deep dive into multi-tenancy and data-integrity bugs that only surface at real scale.",
-    stack: ["Node.js", "Express", "TypeScript", "Prisma", "PostgreSQL", "Next.js", "Tailwind CSS", "BullMQ/Redis"],
+    stack: ["Node.js", "Express", "TypeScript", "Prisma", "PostgreSQL", "Next.js", "Tailwind CSS", "BullMQ"],
     highlight:
        "Built the fee module with recurring invoice generation, partial payment tracking, and overdue reminders via BullMQ/Redis queues, and designed the attendance system with real-time roll calls, bulk-marking for class teachers, and dashboards that surface class-level and student-level trends - all scoped per tenant.",
     liveUrl: "https://digitalpathshalasms.vercel.app",
