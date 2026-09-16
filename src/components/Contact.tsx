@@ -12,7 +12,7 @@ export default function Contact() {
       </motion.p>
 
       <motion.h2 initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.05 }} className="font-display text-3xl md:text-5xl font-semibold text-text mb-6 max-w-2xl">
-        Open to junior fullstack roles.
+        Open to fullstack roles.
       </motion.h2>
 
       <motion.p initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.1 }} className="text-muted max-w-lg mb-10">
